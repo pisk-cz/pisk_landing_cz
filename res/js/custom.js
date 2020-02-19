@@ -18,34 +18,5 @@ function isTorBrowser() {
     )
 }
 document.addEventListener('DOMContentLoaded', function(event) {
-    if (!isTorBrowser()) {
-        document.getElementById('js-use-tor-browser').style.display = 'flex'
-        var anchors = document.getElementsByClassName('demo-btn')
-        for (var z = 0; z < anchors.length; z++) {
-            var elem = anchors[z]
-            elem.onclick = function(e) {
-                e.preventDefault()
-                document.getElementById('modal-id').classList.add('active')
-                return false
-            }
-        }
-        var closes = document.getElementsByClassName('close-modal')
-        for (var z = 0; z < closes.length; z++) {
-            var close = closes[z]
-            close.onclick = function(e) {
-                e.preventDefault()
-                document.getElementById('modal-id').classList.remove('active')
-                return false
-            }
-        }
-    }
-    var close = document.getElementById('js-use-tor-browser-close')
-    close.addEventListener(
-        'click',
-        function() {
-            var elm = document.getElementById('js-use-tor-browser')
-            elm.style.display = 'none'
-        },
-        false
-    )
+   console.warn('dom loaded');
 })
