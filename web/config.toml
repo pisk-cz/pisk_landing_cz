@@ -1,0 +1,225 @@
+baseURL = "https://pisk.cz/"
+languageCode = "cs"
+theme = "navigator-hugo"
+title = "PÍSK.cz"
+
+summaryLength = 10
+
+# Build robots.txt file
+enableRobotsTXT = true
+# google analytics tracking id
+googleAnalytics = ""
+
+enableGitInfo = false
+pygmentsCodeFences = true
+
+# Multilangues setup
+# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
+DefaultContentLanguage = "cs"
+defaultContentLanguageInSubdir = true
+
+# Site Params
+[params]
+logo = "images/logo.png"
+
+# Gestion des langues : FR / EN / NL / DE
+[[Params.listeLangues]]
+code = "cs"
+[[Params.listeLangues]]
+code = "en"
+
+# meta data
+author = "Themefisher"
+description = "This is meta description"
+
+# Gestion des langues : FR / EN / NL / DE
+[Languages]
+############ 1 - Site en FRANCAIS
+[Languages.cs]
+dateFormat = "2 January 2006"
+languageCode = "cs"
+title = "CESKYY Example site multi-language"
+weight = 1
+
+home = "CS Home"
+logo = "images/logo.png"
+menufixed = false
+
+footerAboutTitle = "FRANCAIS About"
+footerDescription = "CESKY Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
+footerQuicklinkTitle = "CESKYYY Quick links"
+footerServiceTitle = "CESKYY Services"
+footerSubscribeTitle = "FRANCAIS Subscribe"
+
+# Hero Area Section
+[Languages.cs.params.hero]
+btnText = "Know More"
+btnURL = "https://themefisher.com/"
+button = true
+description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
+enable = true
+heading = "CZECHSKY We love to make brands grow"
+
+# About 2 Section
+[Languages.cs.params.aboutSm]
+description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
+enable = true
+title = "FRANCAIS We have explored the digital landscape with passion for a long time"
+
+# Blog Section On Homepage
+[Languages.cs.params.blog]
+enable = true
+subtitle = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+title = "FRANCAIS Blog."
+topTitle = "OUR UNTOLD STORY"
+
+# Contact Section
+[Languages.cs.params.contact]
+address = "14/05, Stockhome <br> Victori Palace , United States"
+dribbble = "https://dribbble.com/"
+enable = true
+facebook = "https://www.facebook.com/"
+fax = "+61 3827 3590"
+instagram = "https://www.instagram.com/"
+linkedin = "https://www.linkedin.com/"
+mapLatitude = "51.507351"
+mapLongitude = "-0.127758"
+mapMarker = "images/marker.png"
+phone = "(03) 9283 2617"
+subtitle = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+title = "FRANCAIS Contact Us."
+topTitle = "DROP US A NOTE"
+twitter = "https://twitter.com/"
+
+# Call to Action Section on About Page
+[Languages.cs.params.cta]
+bg = "images/call-to-action/call-to-action-bg-2.jpg"
+btnText = "Nous contacter"
+enable = true
+subtitle = "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
+title = "FRANCAIS Let's Create Something Together"
+
+############# 2 - Site en ENGLISH
+[Languages.en]
+dateFormat = "January 2, 2006"
+languageCode = "en-us"
+title = "Example site multi-language"
+weight = 2
+
+home = "EN Home"
+logo = "images/logo.png"
+menufixed = false
+
+footerAboutTitle = "About"
+footerDescription = "Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
+footerQuicklinkTitle = "Quicklinks"
+footerServiceTitle = "Service"
+footerSubscribeTitle = "Subscribe"
+
+# Hero Area Section
+[Languages.en.params.hero]
+btnText = "Know More"
+btnURL = "https://themefisher.com/"
+button = true
+description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo dolor est incidunt suscipit minima, alias numquam voluptatum rerum porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore at laboriosam unde repellat id expedita quae quisquam libero officia consequatur."
+enable = true
+heading = "We love to make brands grow"
+videoThumb = "images/slider/video-player-thumb.jpg"
+videoURL = "https://www.youtube.com/embed/g3-VxLQO7do"
+
+# About 2 Section
+[Languages.en.params.aboutSm]
+description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
+enable = true
+title = "We have explored the digital landscape with passion for a long time"
+
+# Blog Section On Homepage
+[Languages.en.params.blog]
+enable = true
+subtitle = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+title = "Blog."
+topTitle = "OUR UNTOLD STORY"
+
+# Contact Section
+[Languages.en.params.contact]
+address = "14/05, Stockhome <br> Victori Palace , United States"
+dribbble = "https://dribbble.com/"
+enable = true
+facebook = "https://www.facebook.com/"
+fax = "+61 3827 3590"
+instagram = "https://www.instagram.com/"
+linkedin = "https://www.linkedin.com/"
+mapLatitude = "51.507351"
+mapLongitude = "-0.127758"
+mapMarker = "images/marker.png"
+phone = "(03) 9283 2617"
+subtitle = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+title = "Contact Us."
+topTitle = "DROP US A NOTE"
+twitter = "https://twitter.com/"
+
+# Call to Action Section on About Page
+[Languages.en.params.cta]
+bg = "images/call-to-action/call-to-action-bg-2.jpg"
+btnText = "Contact Us"
+enable = true
+subtitle = "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
+title = "Let's Create Something Together"
+
+# We Used Themefisher Icon font for Icon, for more details check this github repository - https://github.com/themefisher/themefisher-font
+
+# Site Menus
+# [menu]
+# Navbar Menus
+#[[menu.nav]]
+#name = "about"
+#url = "about"
+#weight = 2
+#[[menu.nav]]
+#name = "service"
+#url = "service"
+#weight = 3
+#[[menu.nav]]
+#name = "portfolio"
+#url = "portfolio"
+#weight = 4
+#[[menu.nav]]
+#name = "blog"
+#url = "blog"
+#weight = 5
+#[[menu.nav]]
+#name = "contact"
+#url = "contact"
+#weight = 6
+
+# Footer Service Menu
+#[[menu.service]]
+#name = "graphicdesign"
+#url = "service"
+#weight = 1
+#[[menu.service]]
+#name = "webdesign"
+#url = "service"
+#weight = 2
+#[[menu.service]]
+#name = "webdevelopment"
+#url = "service"
+#weight = 3
+
+# Footer Quick links Menu
+#[[menu.quicklink]]
+#name = "partners"
+#url = "about"
+#weight = 1
+#[[menu.quicklink]]
+#name = "about"
+#url = "about"
+#weight = 2
+#[[menu.quicklink]]
+#name = "faqs"
+#url = "about"
+#weight = 3
+#[[menu.quicklink]]
+#name = "badges"
+#url = "about"
+#weight = 4

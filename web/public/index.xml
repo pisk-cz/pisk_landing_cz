@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PÍSK.cz</title>
+    <link>https://pisk.cz/</link>
+    <description>Recent content on PÍSK.cz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cs</language>
+    <lastBuildDate>Fri, 03 Jul 2020 11:07:54 +0200</lastBuildDate>
+    
+	<atom:link href="https://pisk.cz/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>INDEXXXX</title>
+      <link>https://pisk.cz/</link>
+      <pubDate>Fri, 03 Jul 2020 11:07:54 +0200</pubDate>
+      
+      <guid>https://pisk.cz/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
