@@ -12,8 +12,30 @@ document.addEventListener('DOMContentLoaded', function (event) {
         rowTagsArr.forEach((element) => {
             if (tags.indexOf(element.trim()) == -1) {
                 tags.push(element);
+                var btn = document.createElement('BUTTON');
+                var btnText = document.createTextNode(element);
+                btn.setAttribute('data-filter', '.' + element);
+                btn.appendChild(btnText);
+                filterButtonGroup.appendChild(btn);
             }
         });
+    }
+    function filterEntries(event) {
+        const isButton = event.target.nodeName === 'BUTTON';
+        if (!isButton) {
+            return;
+        }
+        var res = event.target.getAttribute('data-filter');
+
+        if (res !== undefined) {
+            iso.arrange({
+                filter: res,
+            });
+            document
+                .getElementsByClassName('is-checked')[0]
+                .classList.remove('is-checked');
+            event.target.classList.add('is-checked');
+        }
     }
     function createNewEntry(data) {
         var node = document.createElement('A');
@@ -52,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
             },
             complete: function () {
                 iso.layout();
+                filterButtonGroup.addEventListener('click', filterEntries);
                 console.warn('complete');
             },
         }

@@ -283,6 +283,10 @@ h2 {
     text-overflow: ellipsis;
 }
 
+.is-checked {
+    background-color: var(--c-blue);
+}
+
 footer {
     background: var(--c-almostwhite);
     padding: 50px 0 50px 0;
