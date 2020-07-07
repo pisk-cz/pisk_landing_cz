@@ -148,33 +148,20 @@
         <section class="tools">
             <div class="container grid-lg">
                 <div class="columns">
-                    <div class="column col-12 col-sm-12 text-center">
+                    <div class="column col-12 col-sm-12">
                         <h2>Užitečné nástroje a zdroje.</h2>
                     </div>
                     <div class="column col-12">
-                        <div class="button-group filter-button-group">
-                            <button data-filter="*">Všechny</button>
-                            <button data-filter=".manual">Návody</button>
-                            <button data-filter=".tool">
-                                Nástroje
-                            </button>
-                            <button data-filter=".osint">
-                                OSINT
+                        <div
+                            class="button-group filter-button-group"
+                            id="js-buttongroup"
+                        >
+                            <button class="button is-checked" data-filter="*">
+                                Všechny
                             </button>
                         </div>
                     </div>
-                    <div class="grid">
-                        <a
-                            href="https://github.com/pisk-cz/checklist"
-                            class="grid-entry"
-                        >
-                            <img
-                                src="/res/img/fav/android-chrome-512x512.png"
-                            />
-                            <h5>Bezpečnostní Checklist</h5>
-                            <p class="subtext">Udelejte si kontrolní seznam</p>
-                        </a>
-                    </div>
+                    <div class="column col-12 grid" id="js-grid"></div>
                 </div>
             </div>
         </section>
@@ -191,6 +178,8 @@
             type="text/javascript"
             src="res/js/isotope.pkgd.min.js"
         ></script>
+        <script type="text/javascript" src="res/js/papaparse.min.js"></script>
+
         <script type="text/javascript" src="res/js/custom.js"></script>
     </body>
 </html>
