@@ -66,7 +66,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
             header: true,
             download: true,
             step: function (row) {
-                console.log('Row:', row.data);
                 if (row.data !== undefined) {
                     createNewEntry(row.data);
                     if (row.data.types !== undefined) addTags(row.data.types);

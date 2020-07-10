@@ -81,6 +81,12 @@ h6 {
     margin-left: 20px;
     padding: 20px;
 }
+.btn.btn-link.active,
+.btn.btn-link:active,
+.btn.btn-link:focus,
+.btn.btn-link:hover {
+    color: var(--c-blue);
+}
 @media (max-width: 840px) {
     .navbar-section .btn {
         padding-left: 10px;
@@ -163,7 +169,8 @@ h2 {
     text-transform: uppercase;
 }
 
-.whatwedo {
+.whatwedo,
+.contact {
     background-color: var(--c-blue);
     padding-top: 120px;
     padding-bottom: 120px;
@@ -283,8 +290,10 @@ h2 {
     text-overflow: ellipsis;
 }
 
-.is-checked {
+button.is-checked {
     background-color: var(--c-blue);
+    color: white;
+    border: 0;
 }
 
 footer {
