@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
     function createNewEntry(data) {
         var node = document.createElement('A');
         node.setAttribute('href', data.url);
+        node.setAttribute('rel', 'noopener noreferrer');
         var img = document.createElement('div');
         img.classList.add('img');
         img.style.backgroundImage = "url('" + data.icon + "')";
