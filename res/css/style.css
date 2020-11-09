@@ -110,7 +110,7 @@ h6 {
     vertical-align: middle;
 }
 h1 {
-    font-size: 3.6rem;
+    font-size: 4rem;
     font-weight: 600;
     margin-top: 60px;
     margin-bottom: 100px;
@@ -179,6 +179,14 @@ h2 {
     background-image: url(/res/img/toprightdots.svg);
     background-repeat: no-repeat;
     background-position: right top;
+}
+
+.contact a {
+    color: white;
+    text-decoration: underline;
+}
+.contact a:hover {
+    color: black;
 }
 
 .actions {
