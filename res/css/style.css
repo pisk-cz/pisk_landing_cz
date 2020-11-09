@@ -338,6 +338,26 @@ footer {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.checklist {
+    background-color: var(--c-almostwhite);
+    padding: 60px 0 80px 0;
+}
+.checklist .btn {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 60px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    background: var(--c-blue);
+    border: 0;
+    padding: 2rem;
+    border-radius: 35px;
+    line-height: 1.4rem;
+    line-height: 0;
+}
+
 .icon-users:before {
     content: '\e972';
 }
